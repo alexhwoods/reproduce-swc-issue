@@ -1,9 +1,10 @@
 use swc_core::{
-    ast::*,
-    visit::{VisitMut, VisitMutWith,as_folder},
+    ecma::ast::*,
+    ecma::visit::{VisitMut, VisitMutWith,as_folder},
     common::Spanned,
-    testing_transform::test
+    ecma::transforms::testing::test
 };
+
 pub struct TransformVisitor;
 
 impl VisitMut for TransformVisitor {
